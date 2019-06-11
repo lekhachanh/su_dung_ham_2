@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="dao_nguoc(parseInt(prompt('nhập số phần tử trong mảng:')))">
+<script>
+    function dao_nguoc(x) {
+        let array=[];
+        for (let i=0; i<x;i++) {
+            let y = prompt('Nhập vào phần tử thứ '+ i);
+            array.push(y);
+        }
+        document.write("Mảng nhập vào là: "+ array+ "<br>");
+        document.write("Mảng đảo ngược là: " + array.reverse());
+    }
+
+</script>
+
+</body>
+</html>

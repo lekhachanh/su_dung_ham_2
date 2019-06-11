@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="GiaiThua(parseInt(prompt('nhập vào số bất kỳ')))">
+<script>
+    function GiaiThua(x) {
+        let factorial = 1;
+        for (let i=2; i<=x; i++) {
+            factorial = factorial * i;
+        }
+        document.write("Giai thừa của " + x +" là "+ factorial);
+    }
+</script>
+</body>
+</html>

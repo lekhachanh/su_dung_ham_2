@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="checkColor(prompt('input your color?'))">
+<script>
+    function checkColor(input) {
+        let color = ["red", "green", "blue", "pink", "black", "white", "yellow", "red", "grey", "orange", "purple",
+            "red", "blue" ];
+        let count = 0;
+        let check = false
+        for (let i=0; i<color.length;i++) {
+            if (input===color[i]) {
+                check = true
+                count = count + 1;
+            }
+        }
+        if (check) {
+            document.write("số lần lặp của màu là: " + count);
+        }else {
+            document.write("số lần xuất hiện là -1");
+        }
+    }
+</script>
+
+</body>
+</html>

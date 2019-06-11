@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="check_number(prompt('nhập vào chuỗi cần kiểm tra'))">
+<script>
+function check_number(str) {
+    if (isNaN(str) === true) {
+        document.write("Không phải kiểu số");
+    }else {
+        document.write("Đây là kiểu số");
+    }
+}
+</script>
+</body>
+</html>

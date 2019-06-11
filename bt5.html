@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="tim_min(parseInt(prompt('nhập x:')), parseInt(prompt('nhâp y')), parseInt(prompt('nhập z')))">
+<script>
+
+    function tim_min(x,y,z) {
+        if (x<y && x<z) {
+            document.write("min là " +x);
+        }else if (y<x && y<z) {
+            document.write("min là " +y);
+        }else {
+            document.write("min là " +z);
+        }
+    }
+</script>
+</body>
+</html>

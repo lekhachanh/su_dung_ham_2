@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="check_number()">
+<script>
+    function check_number() {
+        let x = prompt("input number");
+        if (isNaN(x)) {
+            x = prompt("please input number");
+        }
+        if (x > 0 && (parseInt(x)).toString().length === x.length) {
+            document.write("true");
+            return true;
+        } else {
+            document.write("false");
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>
